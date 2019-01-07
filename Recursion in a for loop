@@ -1,3 +1,4 @@
+#simple code
 void rec(int x){
 	for(int i=0; i<x; ++i)
 		rec(i);
@@ -9,3 +10,7 @@ int main(){
  
 	return 0;
 }
+#In this particular program the recursive function rec() always call itself before reaching the end of the for loop at the current level of depth. the function call itself at parameter i = 0 which becomes the parameter c in the next level of recursion. once the condition of the for loop is not true any more (where x = 0), let's say we are at level of depth n in the recursion tree, the program continues it's flow back at level n - 1 and call rec() with parameter i of vlaue i(n-1) + 1.
+see source:https://www.quora.com/Can-you-visually-explain-how-recursion-works-inside-the-loop
+
+#Binary watch
